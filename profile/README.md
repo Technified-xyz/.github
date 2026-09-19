@@ -1,10 +1,14 @@
 <!--
   Technified: GitHub organization profile.
-  Lives at:  .github/profile/README.md   (the mark at .github/profile/assets/technified-mark.png)
+  Lives at:  .github/profile/README.md   (images at .github/profile/assets/)
 
-  Before publishing, replace ORG in the raw.githubusercontent.com URL below with the
+  Before publishing, replace ORG in every raw.githubusercontent.com URL with the
   organization's GitHub name. Relative image paths do not resolve on the org profile page,
   but absolute raw URLs do.
+
+  The buttons are images rendered from the design system (8px radius, 40px tall, brand
+  blue #275df5, white label). Their width attributes are half-size on purpose: the files
+  are 3x, so they stay sharp on retina screens. To change a label, re-render the button.
 -->
 
 <div align="center">
@@ -18,10 +22,12 @@
 Two products: a platform that keeps a Discord server and a Roblox experience in sync,
 and a desktop IDE that gives Roblox development a real editor.
 
-<a href="https://technified.xyz"><img src="https://img.shields.io/badge/Website-1a1a1a?style=flat-square&labelColor=0d0d0d" alt="Website"></a>
-<a href="https://docs.technified.xyz"><img src="https://img.shields.io/badge/Documentation-1a1a1a?style=flat-square&labelColor=0d0d0d" alt="Documentation"></a>
-<a href="https://discord.gg/rPCrq5TwMr"><img src="https://img.shields.io/badge/Discord%20server-1a1a1a?style=flat-square&labelColor=0d0d0d" alt="Discord server"></a>
-<a href="https://technified.xyz/updates"><img src="https://img.shields.io/badge/Updates-1a1a1a?style=flat-square&labelColor=0d0d0d" alt="Updates"></a>
+<sub>
+<a href="https://technified.xyz">Website</a> ·
+<a href="https://docs.technified.xyz">Documentation</a> ·
+<a href="https://discord.gg/rPCrq5TwMr">Discord</a> ·
+<a href="https://technified.xyz/updates">Updates</a>
+</sub>
 
 </div>
 
@@ -38,7 +44,11 @@ group ranks, and a moderation action applies on both platforms at the same time,
 full audit trail. Setup takes about two minutes: invite the bot, connect your group, and
 let members verify.
 
-<a href="https://technified.xyz"><img src="https://img.shields.io/badge/Add%20to%20Discord-275df5?style=flat-square&labelColor=0d0d0d" alt="Add to Discord"></a>
+<p>
+<a href="https://technified.xyz"><img src="https://raw.githubusercontent.com/ORG/.github/main/profile/assets/btn-add-to-discord.png" width="139" alt="Add to Discord"></a>
+&nbsp;
+<a href="https://technified.xyz/features"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ORG/.github/main/profile/assets/btn-features-dark.png"><img src="https://raw.githubusercontent.com/ORG/.github/main/profile/assets/btn-features-light.png" width="170" alt="Explore all features"></picture></a>
+</p>
 
 | Area | What it covers |
 | --- | --- |
@@ -49,19 +59,10 @@ let members verify.
 | **Roblox Studio** | Drop-in plugin for Adonis and Guardsman, server manager with live players, bidirectional sync of bans, mutes and permissions |
 | **Developer surface** | Scoped API keys, webhooks for verification and moderation events, Cloudflare Workers with sub-150ms responses worldwide |
 
-The plugin drops into Adonis or Guardsman. Copy the snippet from the dashboard, paste it
-into the Studio command bar, and the module handles the rest.
-
-```lua
-local Technified = require(script.Technified)
-
-Technified:SetApiKey("tfd_live_...")
-Technified:Sync({
-    bans   = true,   -- Discord bans apply in-game
-    mutes  = true,   -- and back again
-    shield = true,   -- auto-kick known problematic players
-})
-```
+The Studio side is a drop-in module: copy the snippet from the dashboard, paste it into the
+Studio command bar, and the plugin handles bans, mutes, permissions and the shield state in
+both directions. The full setup is in the
+[documentation](https://docs.technified.xyz).
 
 ## Technified Code: a real IDE for Roblox, on your desktop
 
@@ -72,8 +73,13 @@ it back to you in a real editor. Your edits go straight back into the place.
 That mirror is what makes the rest possible: a place becomes a repository, so Git works on
 it, and coding agents can read and change it like any other project.
 
-<a href="https://technified.xyz/code"><img src="https://img.shields.io/badge/Download%20for%20Windows-275df5?style=flat-square&labelColor=0d0d0d" alt="Download for Windows"></a>
-<a href="https://technified.xyz/code"><img src="https://img.shields.io/badge/macOS%20soon-1a1a1a?style=flat-square&labelColor=0d0d0d" alt="macOS coming soon"></a>
+<p>
+<a href="https://technified.xyz/code"><img src="https://raw.githubusercontent.com/ORG/.github/main/profile/assets/btn-download-windows.png" width="195" alt="Download for Windows"></a>
+&nbsp;
+<a href="https://docs.technified.xyz"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ORG/.github/main/profile/assets/btn-docs-dark.png"><img src="https://raw.githubusercontent.com/ORG/.github/main/profile/assets/btn-docs-light.png" width="137" alt="Read the docs"></picture></a>
+</p>
+
+<sub>Windows 10 and 11, Beta 3. macOS next. Free while it is in the works.</sub>
 
 | Area | What it covers |
 | --- | --- |
@@ -82,8 +88,6 @@ it, and coding agents can read and change it like any other project.
 | **GUI canvas** | ScreenGuis laid out visually, drag and drop, written back as real instances |
 | **Version control** | Git on the place itself, with per-file diffs |
 | **Agents** | Claude Code and Codex working on the place, with the Studio output console in the editor |
-
-Windows 10 and 11 today, at Beta 3. macOS next. Free while it is in the works.
 
 ## Technified Shield: suspended
 
