@@ -2,9 +2,8 @@
   Technified: GitHub organization profile.
   Lives at:  .github/profile/README.md   (images at .github/profile/assets/)
 
-  Before publishing, replace ORG in every raw.githubusercontent.com URL with the
-  organization's GitHub name. Relative image paths do not resolve on the org profile page,
-  but absolute raw URLs do.
+  Images use absolute raw.githubusercontent.com URLs pointing at Technified-xyz/.github.
+  Relative image paths do not resolve on the org profile page, but absolute raw URLs do.
 
   The buttons are images rendered from the design system (8px radius, 40px tall, brand
   blue #275df5, white label). Their width attributes are half-size on purpose: the files
@@ -13,7 +12,7 @@
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/ORG/.github/main/profile/assets/technified-mark.png" width="84" alt="Technified">
+<img src="https://raw.githubusercontent.com/Technified-xyz/.github/main/profile/assets/technified-mark.png" width="84" alt="Technified">
 
 # Technified
 
@@ -45,9 +44,9 @@ full audit trail. Setup takes about two minutes: invite the bot, connect your gr
 let members verify.
 
 <p>
-<a href="https://technified.xyz"><img src="https://raw.githubusercontent.com/ORG/.github/main/profile/assets/btn-add-to-discord.png" width="139" alt="Add to Discord"></a>
+<a href="https://technified.xyz"><img src="https://raw.githubusercontent.com/Technified-xyz/.github/main/profile/assets/btn-add-to-discord.png" width="139" alt="Add to Discord"></a>
 &nbsp;
-<a href="https://technified.xyz/features"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ORG/.github/main/profile/assets/btn-features-dark.png"><img src="https://raw.githubusercontent.com/ORG/.github/main/profile/assets/btn-features-light.png" width="170" alt="Explore all features"></picture></a>
+<a href="https://technified.xyz/features"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Technified-xyz/.github/main/profile/assets/btn-features-dark.png"><img src="https://raw.githubusercontent.com/Technified-xyz/.github/main/profile/assets/btn-features-light.png" width="170" alt="Explore all features"></picture></a>
 </p>
 
 | Area | What it covers |
@@ -74,9 +73,9 @@ That mirror is what makes the rest possible: a place becomes a repository, so Gi
 it, and coding agents can read and change it like any other project.
 
 <p>
-<a href="https://technified.xyz/code"><img src="https://raw.githubusercontent.com/ORG/.github/main/profile/assets/btn-download-windows.png" width="195" alt="Download for Windows"></a>
+<a href="https://technified.xyz/code"><img src="https://raw.githubusercontent.com/Technified-xyz/.github/main/profile/assets/btn-download-windows.png" width="195" alt="Download for Windows"></a>
 &nbsp;
-<a href="https://docs.technified.xyz"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ORG/.github/main/profile/assets/btn-docs-dark.png"><img src="https://raw.githubusercontent.com/ORG/.github/main/profile/assets/btn-docs-light.png" width="137" alt="Read the docs"></picture></a>
+<a href="https://docs.technified.xyz"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Technified-xyz/.github/main/profile/assets/btn-docs-dark.png"><img src="https://raw.githubusercontent.com/Technified-xyz/.github/main/profile/assets/btn-docs-light.png" width="137" alt="Read the docs"></picture></a>
 </p>
 
 <sub>Windows 10 and 11, Beta 3. macOS next. Free while it is in the works.</sub>
